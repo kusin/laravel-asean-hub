@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create('tb_participants', function (Blueprint $table) {
+            $table->id('id_participants');
+            $table->string('team_name')->nullable();
+            $table->string('participants_name_1')->nullable();
+            $table->string('participants_name_2')->nullable();
+            $table->string('participants_name_3')->nullable();
+            $table->string('participants_name_4')->nullable();
+            $table->string('participants_name_5')->nullable();
+            $table->string('participants_contact_person')->nullable();
+            $table->string('participants_email')->nullable();
+            $table->string('participants_password')->nullable();
+            $table->string('status_data')->nullable();
+            $table->timestamps();
+            $table->softDeletes();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('tb_participants');
+    }
+};

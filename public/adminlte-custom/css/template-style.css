@@ -1,0 +1,19 @@
+span.required::before {
+    content: "* ";
+    color: red;
+}
+
+label.required::before {
+    content: "* ";
+    color: red;
+}
+
+/* .table-responsive table {
+    min-width: 1500px;
+} */
+
+.badge-custom {
+    font-size: 14px;
+    font-weight: normal;
+    display: inline-block;
+}
