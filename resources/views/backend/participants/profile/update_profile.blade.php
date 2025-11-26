@@ -30,12 +30,32 @@
             <div class="card-body">
                 <form action="#" method="post" enctype="multipart/form-data">
                     @csrf
+
                     <div class="row">
                         <div class="col-sm-8">
+
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group mb-4">
+                                <label for="participants_email" class="required">Email</label>
+                                <input type="text" class="form-control border-dark" name="participants_email" id="participants_email">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="participants_password" class="required">Password</label>
+                                <input type="text" class="form-control border-dark" name="participants_password" id="participants_password">
+                            </div>
+                        </div>
+                    </div>
+                    {{-- row --}}
+
+                    <div class="row">
+                        <div class="col-sm-12">
                             <div class="form-group mb-4">
                                 <label for="participants_name_1" class="required">Participant Name 1 (Group Leader)</label>
                                 <input type="text" class="form-control border-dark" name="participants_name_1" id="participants_name_1">
                             </div>
+                        </div>
+                        <div class="col-sm-6">
                             <div class="form-group mb-4">
                                 <label for="participants_name_2" class="required">Participant Name 2 (Member)</label>
                                 <input type="text" class="form-control border-dark" name="participants_name_2" id="participants_name_2">
@@ -55,16 +75,6 @@
                             <div class="form-group mb-4">
                                 <label for="participants_contact_person">Contact Person</label>
                                 <input type="text" class="form-control border-dark" name="participants_contact_person" id="participants_contact_person">
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group mb-4">
-                                <label for="participants_email" class="required">Email</label>
-                                <input type="text" class="form-control border-dark" name="participants_email" id="participants_email">
-                            </div>
-                            <div class="form-group mb-4">
-                                <label for="participants_password" class="required">Password</label>
-                                <input type="text" class="form-control border-dark" name="participants_password" id="participants_password">
                             </div>
                         </div>
                     </div>

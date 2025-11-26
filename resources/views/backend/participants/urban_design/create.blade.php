@@ -30,6 +30,7 @@
             <div class="card-body">
                 <form action="#" method="post" enctype="multipart/form-data">
                     @csrf
+
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group mb-4">
@@ -46,6 +47,7 @@
                         {{-- col-sm --}}
                     </div>
                     {{-- row --}}
+
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group mb-4">
@@ -100,13 +102,13 @@
                         <div class="col-sm-4">
                             <div class="form-group mb-4">
                                 <label for="video_youtube" class="required">Link Youtube</label>
-                                <input type="text" class="form-control border-dark"
-                                    name="video_youtube" id="video_youtube" value="{{ old('video_youtube') }}">
+                                <input type="text" class="form-control border-dark" name="video_youtube" id="video_youtube" value="{{ old('video_youtube') }}">
                             </div>
                         </div>
                         {{-- col --}}
                     </div>
                     {{-- row-sm --}}
+
                     <div class="row">
                         <div class="col-sm-2">
                             <button type="reset" class="btn btn-block btn-outline-danger">
@@ -121,6 +123,7 @@
                         {{-- col-sm --}}
                     </div>
                     {{-- row --}}
+
                 </form>
             </div>
             {{-- card-body --}}

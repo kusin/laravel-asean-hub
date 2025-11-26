@@ -25,14 +25,17 @@
                     <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
-                                <th>#</th>
-                                <th>Team Name</th>
-                                <th>Design Title</th>
-                                <th>Last Updated</th>
-                                <th class="text-center text-nowrap">Upload Completed</th>
-                                <th class="text-center text-nowrap">Top 05</th>
-                                <th class="text-center text-nowrap">Top 10</th>
-                                <th class="text-center text-nowrap">Action</th>
+                                <th rowspan="2" style="vertical-align: middle;">#</th>
+                                <th rowspan="2" style="vertical-align: middle;">Team Name</th>
+                                <th rowspan="2" style="vertical-align: middle;">Design Title</th>
+                                <th colspan="2" style="vertical-align: middle;">Last Updated</th>
+                                <th rowspan="2" style="vertical-align: middle;" class="text-center text-nowrap">Top 05</th>
+                                <th rowspan="2" style="vertical-align: middle;" class="text-center text-nowrap">Top 10</th>
+                                <th rowspan="2" style="vertical-align: middle;" class="text-center text-nowrap">Action</th>
+                            </tr>
+                            <tr>
+                                <th>Date</th>
+                                <th>Time</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -41,21 +44,13 @@
                                 <td>{{ number_format($loop->iteration) }}</td>
                                 <td>{{ $item->participants->team_name ?? '-' }}</td>
                                 <td>{{ $item->design_title ?? '-' }}</td>
-                                <td>{{ $item->created_at?->format('Y-m-d / H:i') }}</td>
+                                <td>{{ $item->created_at?->format('Y-m-d') }}</td>
+                                <td>{{ $item->created_at?->format('H:i') }}</td>
                                 <td class="text-center text-nowrap">
-                                    <a class="btn btn-sm btn-outline-success">
-                                        <i class="fa-solid fa-check"></i>
-                                    </a>
+                                    <a class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-xmark"></i></a>
                                 </td>
                                 <td class="text-center text-nowrap">
-                                    <a class="btn btn-sm btn-outline-danger">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </a>
-                                </td>
-                                <td class="text-center text-nowrap">
-                                    <a class="btn btn-sm btn-outline-danger">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </a>
+                                    <a class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-xmark"></i></a>
                                 </td>
                                 <td class="text-center text-nowrap">
                                     <a href="" class="btn btn-sm btn-outline-info"><i class="fa-solid fa-display"></i></a>

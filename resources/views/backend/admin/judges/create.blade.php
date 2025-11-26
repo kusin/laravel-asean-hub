@@ -34,23 +34,18 @@
                         <div class="col-sm-8">
                             <div class="form-group mb-4">
                                 <label for="judges_name" class="required">Name of Judges</label>
-                                <input type="text" class="form-control border-dark"
-                                    name="judges_name" id="judges_name" value="{{ old('judges_name') }}"
-                                    placeholder="Aryajaya Alamsyah, S.Kom., M.Kom., MTA.">
+                                <input type="text" class="form-control border-dark" name="judges_name" id="judges_name" value="{{ old('judges_name') }}" placeholder="Aryajaya Alamsyah, S.Kom., M.Kom.">
                             </div>
                             <div class="form-group mb-4">
                                 <label for="origin_institution" class="required">Origin of Institution</label>
-                                <input type="text" class="form-control border-dark"
-                                    name="origin_institution" id="origin_institution" value="{{ old('origin_institution') }}"
-                                    placeholder="Politeknik Negeri Jakarta">
+                                <input type="text" class="form-control border-dark" name="origin_institution" id="origin_institution" value="{{ old('origin_institution') }}" placeholder="Politeknik Negeri Jakarta">
                             </div>
                             <div class="form-group mb-4">
                                 <label for="judges_photo" class="required">Your Photo</label>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input"
-                                        name="judges_photo" id="judges_photo" required>
+                                <!-- <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="judges_photo" id="judges_photo" required>
                                     <label class="custom-file-label border-dark" for="judges_photo">Choose file</label>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         {{-- col-sm --}}

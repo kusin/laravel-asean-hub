@@ -77,7 +77,7 @@
             </div>
             <div class="card-body d-flex justify-content-center">
                 <figure class="figure">
-                    <img src="{{ asset('adminlte/dist/img/peta1.png') }}" class="figure-img img-fluid" alt="...">
+                    <img src="{{ asset('adminlte/dist/img/peta-1-EN.png') }}" class="figure-img img-fluid" alt="...">
                 </figure>
             </div>
         </div>
@@ -97,7 +97,7 @@
             </div>
             <div class="card-body d-flex justify-content-center">
                 <figure class="figure">
-                    <img src="{{ asset('adminlte/dist/img/peta2.png') }}" class="figure-img img-fluid" alt="...">
+                    <img src="{{ asset('adminlte/dist/img/peta-2-EN.png') }}" class="figure-img img-fluid" alt="...">
                 </figure>
             </div>
         </div>
