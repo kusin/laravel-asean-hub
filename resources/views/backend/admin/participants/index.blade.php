@@ -26,11 +26,10 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>List of Participants</th>
+                                <th>Action</th>
                                 <th>Name of Team</th>
                                 <th>Email Team</th>
-                                <th>Contact Person</th>
-                                <th>Aksi</th>
+                                <th>Country</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -38,22 +37,13 @@
                             <tr>
                                 <td>{{ number_format($loop->iteration) }}</td>
                                 <td>
-                                    <ul>
-                                        <li>{{ $item->participants_name_1 ?? '-' }}</li>
-                                        <li>{{ $item->participants_name_2 ?? '-' }}</li>
-                                        <li>{{ $item->participants_name_3 ?? '-' }}</li>
-                                        <li>{{ $item->participants_name_4 ?? '-' }}</li>
-                                        <li>{{ $item->participants_name_5 ?? '-' }}</li>
-                                    </ul>
-                                </td>
-                                <td>{{ $item->team_name ?? '-' }}</td>
-                                <td>{{ $item->participants_email ?? '-' }}</td>
-                                <td>{{ $item->participants_contact_person ?? '-' }}</td>
-                                <td>
                                     <a href="" class="btn btn-sm btn-outline-info"><i class="fa-solid fa-display"></i></a>
                                     <a href="" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-edit"></i></a>
                                     <a href="" class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-trash"></i></a>
                                 </td>
+                                <td>{{ $item->team_name ?? '-' }}</td>
+                                <td>{{ $item->participants_email ?? '-' }}</td>
+                                <td>Korea Selatan</td>
                             </tr>
                             @endforeach
                         </tbody>

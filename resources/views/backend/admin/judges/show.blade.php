@@ -18,7 +18,7 @@
 {{-- row --}}
 
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-12">
         <div class="card card-info card-outline">
             <div class="card-body">
                 <div class="text-center">
@@ -45,14 +45,9 @@
         </div>
         {{-- card --}}
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-12">
         <div class="card card-info card-outline">
-            <div class="card-header">
-                <h3 class="card-title">Information About the Judges Biodata</h3>
-                <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
-                </div>
-            </div>
+
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-12">

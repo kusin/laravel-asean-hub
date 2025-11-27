@@ -32,9 +32,9 @@
                                 <th>#</th>
                                 <th>Action</th>
                                 <th>Name of Judges</th>
-                                <th>Origin of Country</th>
-                                <th>Origin of Institution</th>
+                                <th>Country and Institution</th>
                                 <th>Email</th>
+                                <th>Assessment</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -49,9 +49,9 @@
                                     </button>
                                 </td>
                                 <td>{{ $item->judges_name ?? '-' }}</td>
-                                <td>{{ $item->origin_country ?? '-' }}</td>
                                 <td>{{ $item->origin_institution ?? '-' }}</td>
                                 <td>{{ $item->judges_email ?? '-' }}</td>
+                                <td><span class="badge badge-warning badge-custom">On progress</span></td>
                             </tr>
                             @endforeach
                         </tbody>
