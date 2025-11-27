@@ -32,7 +32,7 @@
                                 <th>#</th>
                                 <th>Action</th>
                                 <th>Name of Judges</th>
-                                <th>Country and Institution</th>
+                                <th>Origin of Institution</th>
                                 <th>Email</th>
                                 <th>Assessment</th>
                             </tr>

@@ -29,6 +29,9 @@ Route::controller(JudgesBackend::class)->group(function () {
 });
 Route::controller(ParticipantsBackend::class)->group(function () {
     Route::get('/admin/participants', 'index')->name('admin.participants.index');
+    Route::get('/admin/participants/show', 'show')->name('admin.participants.show');
+    Route::get('/admin/participants/create', 'create')->name('admin.participants.create');
+    Route::get('/admin/participants/edit', 'edit')->name('admin.participants.edit');
 });
 Route::controller(VotersBackend::class)->group(function () {
     Route::get('/admin/voters', 'index')->name('admin.voters.index');

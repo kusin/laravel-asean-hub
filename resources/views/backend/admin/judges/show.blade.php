@@ -45,9 +45,9 @@
         </div>
         {{-- card --}}
     </div>
+    {{-- col-sm --}}
     <div class="col-sm-12">
         <div class="card card-info card-outline">
-
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-12">

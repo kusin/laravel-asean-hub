@@ -4,10 +4,10 @@
 @section('content')
 <div class="row">
     <div class="col-sm-12">
-        <div class="callout callout-danger">
+        <div class="callout callout-info">
             <span class="text-dark">
                 <i class="fa-solid fa-book mr-2"></i>
-                List of All Participants
+                All Data Participants
             </span>
         </div>
         {{-- callout --}}
@@ -18,8 +18,12 @@
 
 <div class="row">
     <div class="col-sm-12">
-        <div class="card card-danger card-outline">
-            <div class="card-header"></div>
+        <div class="card card-info card-outline">
+            <div class="card-header">
+                <a href="{{ route('admin.participants.create') }}" class="btn btn-outline-success">
+                    <i class="fa-solid fa-square-plus mr-2"></i>Add Data
+                </a>
+            </div>
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover">
@@ -28,8 +32,9 @@
                                 <th>#</th>
                                 <th>Action</th>
                                 <th>Name of Team</th>
-                                <th>Email Team</th>
-                                <th>Country</th>
+                                <th>Email of Team</th>
+                                <th>Origin of Country</th>
+                                <th>Registration</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -37,13 +42,16 @@
                             <tr>
                                 <td>{{ number_format($loop->iteration) }}</td>
                                 <td>
-                                    <a href="" class="btn btn-sm btn-outline-info"><i class="fa-solid fa-display"></i></a>
-                                    <a href="" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-edit"></i></a>
-                                    <a href="" class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-trash"></i></a>
+                                    <a href="{{ route('admin.participants.show') }}" class="btn btn-sm btn-outline-info"><i class="fa-solid fa-display"></i></a>
+                                    <a href="{{ route('admin.participants.edit') }}" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-edit"></i></a>
+                                    <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#showModal">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
                                 </td>
                                 <td>{{ $item->team_name ?? '-' }}</td>
                                 <td>{{ $item->participants_email ?? '-' }}</td>
-                                <td>Korea Selatan</td>
+                                <td>Indonesia</td>
+                                <td><span class="badge badge-success badge-custom">Completed</span></td>
                             </tr>
                             @endforeach
                         </tbody>

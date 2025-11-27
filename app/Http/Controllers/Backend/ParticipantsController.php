@@ -8,11 +8,35 @@ use Illuminate\Http\Request;
 
 class ParticipantsController extends Controller
 {
+
+    # ------------------------------------------------------------------------------------------------- #
+    # CRUD - Controller ------------------------------------------------------------------------------- #
+    # ------------------------------------------------------------------------------------------------- #
     public function index()
     {
         $data = Participants::all();
         return view('backend.admin.participants.index', compact('data'));
     }
+
+    public function show()
+    {
+        return view('backend.admin.participants.show');
+    }
+
+    public function create()
+    {
+        return view('backend.admin.participants.create');
+    }
+
+    public function edit()
+    {
+        return view('backend.admin.participants.edit');
+    }
+
+    # ------------------------------------------------------------------------------------------------- #
+    # CRUD - Controller ------------------------------------------------------------------------------- #
+    # ------------------------------------------------------------------------------------------------- #
+
     public function updateProfile()
     {
         return view('backend.participants.profile.update_profile');

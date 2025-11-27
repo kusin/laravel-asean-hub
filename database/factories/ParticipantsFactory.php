@@ -22,7 +22,7 @@ class ParticipantsFactory extends Factory
             'participants_contact_person'   => $this->faker->numerify('08##-####-####'),
             'participants_email'            => $this->faker->unique()->safeEmail(),
             'participants_password'         => Hash::make('12341234'),
-            'status_data'                   => 'Aktif',  // Status default
+            'status_data'                   => 'Active',  // Status default
 
         ];
     }
