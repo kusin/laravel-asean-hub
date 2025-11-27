@@ -5,10 +5,10 @@
 
 <div class="row">
     <div class="col-sm-12">
-        <div class="callout callout-success">
+        <div class="callout callout-warning">
             <span class="text-dark">
                 <i class="fa-solid fa-book mr-2"></i>
-                Add Data Judges
+                Edit Data Judges
             </span>
         </div>
         {{-- callout --}}
@@ -19,7 +19,7 @@
 
 <div class="row">
     <div class="col-sm-12">
-        <div class="card card-success card-outline">
+        <div class="card card-warning card-outline">
             <div class="card-body">
                 <form action="#" method="post" enctype="multipart/form-data">
                     @csrf

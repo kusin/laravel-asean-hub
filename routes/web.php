@@ -23,7 +23,9 @@ Route::get('/', function () {
 Route::get('/admin/dashboard', [DashboardBackend::class, 'showAdmin'])->name('admin.dashboard');
 Route::controller(JudgesBackend::class)->group(function () {
     Route::get('/admin/judges', 'index')->name('admin.judges.index');
+    Route::get('/admin/judges/show', 'show')->name('admin.judges.show');
     Route::get('/admin/judges/create', 'create')->name('admin.judges.create');
+    Route::get('/admin/judges/edit', 'edit')->name('admin.judges.edit');
 });
 Route::controller(ParticipantsBackend::class)->group(function () {
     Route::get('/admin/participants', 'index')->name('admin.participants.index');

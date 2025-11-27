@@ -1,6 +1,7 @@
 h3.required::before {
     content: "* ";
     color: red;
+    font-weight: bold;
 }
 
 span.required::before {

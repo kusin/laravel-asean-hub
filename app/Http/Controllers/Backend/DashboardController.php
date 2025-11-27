@@ -14,10 +14,10 @@ class DashboardController extends Controller
 {
     public function showAdmin()
     {
-        $number_judges          = Judges::where('status_data', 'Aktif')->count();
-        $number_participants    = Participants::where('status_data', 'Aktif')->count();
-        $number_voters          = Voters::where('status_data', 'Aktif')->count();
-        $number_urban_design    = UrbanDesign::where('status_data', 'Aktif')->count();
+        $number_judges          = Judges::where('status_data', 'Active')->count();
+        $number_participants    = Participants::where('status_data', 'Active')->count();
+        $number_voters          = Voters::where('status_data', 'Active')->count();
+        $number_urban_design    = UrbanDesign::where('status_data', 'Active')->count();
         return view('backend.admin.dashboard', compact(
             'number_judges',
             'number_participants',

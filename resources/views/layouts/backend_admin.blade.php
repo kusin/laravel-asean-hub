@@ -65,8 +65,17 @@
     {{-- scripts fontawesome 6.7.2 --}}
     <script src="{{ asset('adminlte/plugins/fontawesome/js/all.min.js') }}"></script>
 
+    {{-- scripts bs-custom-file-input --}}
+    <script src="{{ asset('adminlte/plugins/bs-custom-file-input/bs-custom-file-input.min.js') }}"></script>
+
     {{-- scripts adminlte 3.2.0 --}}
     <script src="{{ asset('adminlte/dist/js/adminlte.min.js') }}"></script>
+
+    <script>
+        $(function() {
+            bsCustomFileInput.init();
+        });
+    </script>
 
     @stack('scripts')
 </body>

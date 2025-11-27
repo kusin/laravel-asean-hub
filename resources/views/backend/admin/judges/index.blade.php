@@ -4,10 +4,10 @@
 @section('content')
 <div class="row">
     <div class="col-sm-12">
-        <div class="callout callout-danger">
+        <div class="callout callout-info">
             <span class="text-dark">
                 <i class="fa-solid fa-book mr-2"></i>
-                List of All Judges
+                All Data Judges
             </span>
         </div>
         {{-- callout --}}
@@ -18,7 +18,7 @@
 
 <div class="row">
     <div class="col-sm-12">
-        <div class="card card-danger card-outline">
+        <div class="card card-info card-outline">
             <div class="card-header">
                 <a href="{{ route('admin.judges.create') }}" class="btn btn-outline-success">
                     <i class="fa-solid fa-square-plus mr-2"></i>Add Data
@@ -30,26 +30,26 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Photo</th>
+                                <th>Action</th>
                                 <th>Name of Judges</th>
+                                <th>Origin of Country</th>
                                 <th>Origin of Institution</th>
                                 <th>Email</th>
-                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($data as $item)
                             <tr>
                                 <td>{{ number_format($loop->iteration) }}</td>
-                                <td><img src="{{ asset('adminlte/dist/img/user8-128x128.jpg') }}" class="img-fluid"></td>
-                                <td>{{ $item->judges_name ?? '-' }}</td>
-                                <td>{{ $item->origin_institution ?? '-' }}</td>
-                                <td>{{ $item->judges_email ?? '-' }}</td>
                                 <td>
-                                    <a href="" class="btn btn-sm btn-outline-info"><i class="fa-solid fa-display"></i></a>
-                                    <a href="" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-edit"></i></a>
+                                    <a href="{{ route('admin.judges.show') }}" class="btn btn-sm btn-outline-info"><i class="fa-solid fa-display"></i></a>
+                                    <a href="{{ route('admin.judges.edit') }}" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-edit"></i></a>
                                     <a href="" class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-trash"></i></a>
                                 </td>
+                                <td>{{ $item->judges_name ?? '-' }}</td>
+                                <td>{{ $item->origin_country ?? '-' }}</td>
+                                <td>{{ $item->origin_institution ?? '-' }}</td>
+                                <td>{{ $item->judges_email ?? '-' }}</td>
                             </tr>
                             @endforeach
                         </tbody>

@@ -14,8 +14,18 @@ class JudgesController extends Controller
         return view('backend.admin.judges.index', compact('data'));
     }
 
+    public function show()
+    {
+        return view('backend.admin.judges.show');
+    }
+
     public function create()
     {
         return view('backend.admin.judges.create');
+    }
+
+    public function edit()
+    {
+        return view('backend.admin.judges.edit');
     }
 }
