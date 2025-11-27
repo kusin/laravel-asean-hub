@@ -22,7 +22,9 @@ class Judges extends Model
     // ...
     protected $fillable = [
         'judges_name',
+        'origin_country',
         'origin_institution',
+        'judges_task',
         'judges_photo',
         'judges_email',
         'judges_password',

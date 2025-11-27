@@ -54,10 +54,9 @@
             <div class="card-body">
                 <div class="alert alert-light" role="alert">
                     <h4 class="alert-heading">Congratulations</h4>
-                    <p class="font-weight-normal">
+                    <h4 class="alert-heading">
                         You are a top 10 finalist, the presentation of the results of the city planning will be held on May 5, 2025 at the DKI Jakarta City Hall.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab autem culpa minima saepe repudiandae, maxime iste iure! Veniam explicabo quibusdam reiciendis suscipit. Ipsa mollitia consequatur molestias sed iure et! Reiciendis?
-                    </p>
+                    </h4>
                 </div>
             </div>
         </div>

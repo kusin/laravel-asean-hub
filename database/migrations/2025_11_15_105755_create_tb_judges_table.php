@@ -11,7 +11,9 @@ return new class extends Migration
         Schema::create('tb_judges', function (Blueprint $table) {
             $table->id('id_judges');
             $table->string('judges_name')->nullable();
+            $table->string('origin_country')->nullable();
             $table->string('origin_institution')->nullable();
+            $table->string('judges_task')->nullable();
             $table->string('judges_photo')->nullable();
             $table->string('judges_email')->nullable();
             $table->string('judges_password')->nullable();

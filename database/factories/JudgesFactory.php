@@ -18,18 +18,25 @@ class JudgesFactory extends Factory
 
         return [
             'judges_name'           => $this->faker->name(),
+            'origin_country'        => $this->faker->randomElement([
+                'Indonesia',
+                'Singapore',
+                'Netherlands',
+                'South Korea',
+                'Thailand',
+            ]),
             'origin_institution'    => $this->faker->randomElement([
                 'IPB University',
                 'Institut Teknologi Bandung',
                 'Universitas Indonesia',
                 'Universitas Gajah Mada',
                 'Delft University of Technology',
-                'University of Southern California',
             ]),
-            'judges_photo'           => '-',
+            'judges_task'           => '-',
+            'judges_photo'          => '-',
             'judges_email'          => $this->faker->unique()->safeEmail(),
             'judges_password'       => Hash::make('12341234'),
-            'status_data'           => 'Aktif',
+            'status_data'           => 'Active',
         ];
     }
 }
