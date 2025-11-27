@@ -19,7 +19,6 @@ label.required::before {
 } */
 
 .badge-custom {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
-    display: inline-block;
 }
