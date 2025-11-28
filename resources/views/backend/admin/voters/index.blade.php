@@ -27,10 +27,10 @@
                             <tr>
                                 <th>#</th>
                                 <th>Voter Name</th>
+                                <th>Voter Job</th>
                                 <th>Email</th>
                                 <th>IP Address</th>
                                 <th>MAC Address</th>
-                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -38,14 +38,11 @@
                             <tr>
                                 <td>{{ number_format($loop->iteration) }}</td>
                                 <td>{{ $item->voters_name ?? '-' }}</td>
+                                <td>{{ $item->voters_job ?? '-' }}</td>
                                 <td>{{ $item->voters_email ?? '-' }}</td>
                                 <td>{{ $item->ip_address ?? '-' }}</td>
                                 <td>{{ $item->mac_address ?? '-' }}</td>
-                                <td>
-                                    <a href="" class="btn btn-sm btn-outline-info"><i class="fa-solid fa-display"></i></a>
-                                    <a href="" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-edit"></i></a>
-                                    <a href="" class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-trash"></i></a>
-                                </td>
+
                             </tr>
                             @endforeach
                         </tbody>

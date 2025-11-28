@@ -21,7 +21,7 @@ class VotersFactory extends Factory
             'voters_job'        => $this->faker->jobTitle(),
             'voters_email'      => $this->faker->unique()->safeEmail(),
             'voters_password'   => '12341234',
-            'status_data'       => 'Aktif',
+            'status_data'       => 'Active',
         ];
     }
 }

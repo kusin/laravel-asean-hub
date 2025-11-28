@@ -70,13 +70,13 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group mb-4">
-                            <label for="jugdes_task">Assessment Stage</label>
-                            <input type="text" class="form-control border-dark" name="jugdes_task" id="jugdes_task" value="Stage One" disabled>
+                            <label for="jugdes_task">Task of Jugdes</label>
+                            <input type="text" class="form-control border-dark" name="jugdes_task" id="jugdes_task" value="Assessment One" disabled>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group mb-4">
-                            <label for="judges_email">Email</label>
+                            <label for="judges_email">Email of Judges</label>
                             <input type="email" class="form-control border-dark" name="judges_email" id="judges_email" value="aryajaya.alamsyah@aseanhub.jakarta.go.id" disabled>
                         </div>
                     </div>
