@@ -1,1 +1,1 @@
-@extends('layouts.frontend_profile.blade')
+@extends('layouts.frontend_profile')

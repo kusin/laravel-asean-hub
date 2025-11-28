@@ -14,7 +14,7 @@ use App\Http\Controllers\Backend\UrbanDesignController as UrbanDesignBackend;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.dashboard');
 });
 
 # ------------------------------------------------------------------------------------------------- #
