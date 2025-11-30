@@ -19,93 +19,6 @@
     {{-- template style - custom-bootstrap --}}
     <link rel="stylesheet" href="{{ asset('bootstrap/template.css') }}">
 
-    <!-- CSS Kustom yang Diperbaiki -->
-    <style>
-        /* Gaya umum untuk halaman */
-        body {
-            background-color: #f8f9fa;
-            /* Latar belakang abu-abu muda untuk kontras */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        /* Mengatur tampilan kartu agar lebih rapi dan modern */
-        .card {
-            border: none;
-            border-radius: 0.75rem;
-            /* Sudut kartu yang sedikit lebih melengkung */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-            /* Pastikan semua kartu memiliki tinggi yang sama */
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-        }
-
-        /* Padding di dalam kartu menjadi lebih proporsional */
-        .card-body {
-            padding: 2rem;
-        }
-
-        /* Gaya untuk container utama di dalam kartu */
-        .section-contact {
-            display: flex;
-            align-items: center;
-            height: 100%;
-        }
-
-        /* Gaya untuk wadah ikon di sebelah kiri */
-        .section-left {
-            background-color: #212529;
-            /* Background warna hitam/gelap */
-            color: white;
-            width: 50px;
-            /* Ukuran yang lebih proporsional */
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 1.25rem;
-            /* Jarak antara ikon dan teks yang seimbang */
-            flex-shrink: 0;
-            /* Mencegah ikon menyusut */
-        }
-
-        /* Ukuran ikon yang disesuaikan */
-        .section-left i {
-            font-size: 1.25rem;
-        }
-
-        /* Gaya untuk wadah teks di sebelah kanan */
-        .section-right {
-            flex-grow: 1;
-            /* Biarkan area teks memenuhi sisa ruang */
-        }
-
-        .section-right p {
-            margin: 0;
-            line-height: 1.5;
-        }
-
-        /* Gaya untuk label (Our Location, Email, Phone Number) */
-        .section-right .label {
-            font-weight: 600;
-            /* Ketebalan font yang sedang */
-            font-size: 1rem;
-            color: #212529;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Gaya untuk detail (alamat, email, nomor telepon) */
-        .section-right .detail {
-            font-size: 0.9rem;
-            color: #6c757d;
-        }
-    </style>
-
     @stack('styles')
 </head>
 
@@ -141,10 +54,24 @@
     {{-- navbar --}}
 
     <section class="container mb-5">
+        <h4 class="border-bottom opacity-75 pb-3 mb-3">Information About Asean HUB</h4>
+        <div class="row g-3">
+            <div class="col-sm-12">
+                <div class="card">
+
+                </div>
+            </div>
+            {{-- col --}}
+        </div>
+        {{-- row --}}
+    </section>
+    {{-- section-about --}}
+
+    <section class="container mb-5">
         <h4 class="border-bottom opacity-75 pb-3 mb-3">Judges Team</h4>
         <div class="row g-3">
             <div class="col-sm-3">
-                <div class="card border-dark">
+                <div class="card card-judges">
                     <div class="card-body">
                         <div class="text-center">
                             <img class="img-fluid img-thumbnail mb-2"
@@ -157,7 +84,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card border-dark">
+                <div class="card card-judges">
                     <div class="card-body">
                         <div class="text-center">
                             <img class="img-fluid img-thumbnail mb-2"
@@ -170,7 +97,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card border-dark">
+                <div class="card card-judges">
                     <div class="card-body">
                         <div class="text-center">
                             <img class="img-fluid img-thumbnail mb-2"
@@ -183,7 +110,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card border-dark">
+                <div class="card card-judges">
                     <div class="card-body">
                         <div class="text-center">
                             <img class="img-fluid img-thumbnail mb-2"
@@ -196,7 +123,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card border-dark">
+                <div class="card card-judges">
                     <div class="card-body">
                         <div class="text-center">
                             <img class="img-fluid img-thumbnail mb-2"
@@ -209,7 +136,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card border-dark">
+                <div class="card card-judges">
                     <div class="card-body">
                         <div class="text-center">
                             <img class="img-fluid img-thumbnail mb-2"
@@ -222,7 +149,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card border-dark">
+                <div class="card card-judges">
                     <div class="card-body">
                         <div class="text-center">
                             <img class="img-fluid img-thumbnail mb-2"
@@ -235,7 +162,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card border-dark">
+                <div class="card card-judges">
                     <div class="card-body">
                         <div class="text-center">
                             <img class="img-fluid img-thumbnail mb-2"
@@ -253,63 +180,46 @@
     </section>
     {{-- section-judges --}}
 
-
-
-    <section class="container my-5">
-        <h4 class="border-bottom opacity-75 pb-3 mb-4">Contact Us</h4>
-        <div class="row g-4">
-            <!-- Card Lokasi -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="section-contact">
-                            <div class="section-left">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="section-right">
-                                <p class="label">Our Location</p>
-                                <p class="detail">Jl. Medan Merdeka Selatan No. 8-9, Central Jakarta, Postal Code 10110.</p>
-                            </div>
-                        </div>
+    <section class="container mb-5">
+        <h4 class="border-bottom opacity-75 pb-3 mb-3">Contact Us</h4>
+        <div class="row g-3">
+            <div class="col-sm-12">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="contact_name" placeholder="Full name">
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="contact_email" placeholder="Email address">
+                    </div>
+                    <div class="mb-0">
+                        <textarea class="form-control" id="contact_message" placeholder="Write a message" rows="7"></textarea>
+                    </div>
+                </form>
             </div>
+            {{-- col --}}
+        </div>
+        {{-- row --}}
+    </section>
+    {{-- section-contact --}}
 
-            <!-- Card Email -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="section-contact">
-                            <div class="section-left">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="section-right">
-                                <p class="label">Email</p>
-                                <p class="detail">Information@aseanhub.jakarta.go.id</p>
-                            </div>
-                        </div>
-                    </div>
+    <footer class="bg-light text-dark border-top">
+        <div class="container py-3">
+            <div class="d-flex flex-md-row justify-content-between align-items-center">
+                <div class="text-start pt-2 pb-2">
+                    <span class="text-dark">
+                        ASEAN Hub International Design Competition. Copyright © 2025 - All Rights Reserved.
+                    </span>
                 </div>
-            </div>
-
-            <!-- Card Telepon -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="section-contact">
-                            <div class="section-left">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="section-right">
-                                <p class="label">Phone Number</p>
-                                <p class="detail">021 - 382 - 2255</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="text-end pt-2 pb-2">
+                    <span class="text-dark fs-4 me-2"><i class="fa-brands fa-youtube"></i></span>
+                    <span class="text-dark fs-4 me-2"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="text-dark fs-4 me-0"><i class="fa-brands fa-x-twitter"></i></span>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+
+
 
 
 
