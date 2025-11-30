@@ -51,22 +51,19 @@
         <li class="nav-item">
             <a href="" class="nav-link">
                 <i class="nav-icon fa-solid fa-book"></i>
-                <p class="text-light">Voting Results</p>
-            </a>
-        </li>
-
-        {{-- Finalists --}}
-        <li class="nav-header mt-2">FINALIST</li>
-        <li class="nav-item">
-            <a href="" class="nav-link">
-                <i class="nav-icon fa-solid fa-book"></i>
-                <p class="text-light">Top Ten Participants</p>
+                <p class="text-light">Assessment One</p>
             </a>
         </li>
         <li class="nav-item">
             <a href="" class="nav-link">
                 <i class="nav-icon fa-solid fa-book"></i>
-                <p class="text-light">Top Five Participants</p>
+                <p class="text-light">Assessment Two</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">
+                <i class="nav-icon fa-solid fa-book"></i>
+                <p class="text-light">Final Assessment</p>
             </a>
         </li>
 

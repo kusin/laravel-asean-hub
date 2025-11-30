@@ -38,6 +38,7 @@ Route::controller(VotersBackend::class)->group(function () {
 });
 Route::controller(UrbanDesignBackend::class)->group(function () {
     Route::get('/admin/urban-design', 'index')->name('admin.urban-design.index');
+    Route::get('/admin/urban-design/show', 'show')->name('admin.urban-design.show');
 });
 
 # ------------------------------------------------------------------------------------------------- #

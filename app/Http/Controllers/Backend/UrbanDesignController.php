@@ -16,6 +16,11 @@ class UrbanDesignController extends Controller
         return view('backend.admin.urban_design.index', compact('data'));
     }
 
+    public function show()
+    {
+        return view('backend.admin.urban_design.create');
+    }
+
     public function create()
     {
         return view('backend.admin.urban_design.create');
