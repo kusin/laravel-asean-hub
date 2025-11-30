@@ -2,12 +2,13 @@
 
 @section('nav-urban-design', 'active')
 @section('content')
+
 <div class="row">
     <div class="col-sm-12">
-        <div class="callout callout-danger">
+        <div class="callout callout-info">
             <span class="text-dark">
                 <i class="fa-solid fa-book mr-2"></i>
-                List of All Urban Design
+                All Data Urban Design
             </span>
         </div>
         {{-- callout --}}
@@ -18,7 +19,7 @@
 
 <div class="row">
     <div class="col-sm-12">
-        <div class="card card-danger card-outline">
+        <div class="card card-info card-outline">
             <div class="card-header"></div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -26,37 +27,36 @@
                         <thead>
                             <tr>
                                 <th rowspan="2" style="vertical-align: middle;">#</th>
+                                <th rowspan="2" style="vertical-align: middle;">Action</th>
                                 <th rowspan="2" style="vertical-align: middle;">Team Name</th>
-                                <th rowspan="2" style="vertical-align: middle;">Design Title</th>
-                                <th colspan="2" style="vertical-align: middle;">Last Updated</th>
-                                <th rowspan="2" style="vertical-align: middle;" class="text-center text-nowrap">Top 05</th>
-                                <th rowspan="2" style="vertical-align: middle;" class="text-center text-nowrap">Top 10</th>
-                                <th rowspan="2" style="vertical-align: middle;" class="text-center text-nowrap">Action</th>
+                                <th rowspan="2" style="vertical-align: middle;">Country</th>
+                                <th colspan="3" class="text-center">Poster Images</th>
+                                <th colspan="2" class="text-center">Videos</th>
+                                <th rowspan="2" style="vertical-align: middle;">Status</th>
                             </tr>
                             <tr>
-                                <th>Date</th>
-                                <th>Time</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>Native</th>
+                                <th>Youtube</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($data as $item)
                             <tr>
                                 <td>{{ number_format($loop->iteration) }}</td>
+                                <td>
+                                    <a href="" class="btn btn-sm btn-outline-info"><i class="fa-solid fa-display"></i>Show</a>
+                                </td>
                                 <td>{{ $item->participants->team_name ?? '-' }}</td>
-                                <td>{{ $item->design_title ?? '-' }}</td>
-                                <td>{{ $item->created_at?->format('Y-m-d') }}</td>
-                                <td>{{ $item->created_at?->format('H:i') }}</td>
-                                <td class="text-center text-nowrap">
-                                    <a class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-xmark"></i></a>
-                                </td>
-                                <td class="text-center text-nowrap">
-                                    <a class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-xmark"></i></a>
-                                </td>
-                                <td class="text-center text-nowrap">
-                                    <a href="" class="btn btn-sm btn-outline-info"><i class="fa-solid fa-display"></i></a>
-                                    <a href="" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-edit"></i></a>
-                                    <a href="" class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-trash"></i></a>
-                                </td>
+                                <td>Indonesia</td>
+                                <td>Available</td>
+                                <td>Available</td>
+                                <td>Available</td>
+                                <td>Available</td>
+                                <td>Available</td>
+                                <td><span class="badge badge-success badge-custom">Completed</span></td>
                             </tr>
                             @endforeach
                         </tbody>
