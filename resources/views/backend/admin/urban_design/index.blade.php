@@ -47,7 +47,9 @@
                             <tr>
                                 <td>{{ number_format($loop->iteration) }}</td>
                                 <td>
-                                    <a href="" class="btn btn-sm btn-outline-info"><i class="fa-solid fa-display"></i>Show</a>
+                                    <a href="{{ route('admin.urban-design.show') }}" class="btn btn-sm btn-outline-info">
+                                        <span><i class="fa-solid fa-display mr-2"></i>Details</span>
+                                    </a>
                                 </td>
                                 <td>{{ $item->participants->team_name ?? '-' }}</td>
                                 <td>Indonesia</td>
@@ -56,7 +58,9 @@
                                 <td>Available</td>
                                 <td>Available</td>
                                 <td>Available</td>
-                                <td><span class="badge badge-success badge-custom">Completed</span></td>
+                                <td>
+                                    <span class="badge badge-success badge-custom">Completed</span>
+                                </td>
                             </tr>
                             @endforeach
                         </tbody>
@@ -74,4 +78,5 @@
     {{-- col-sm --}}
 </div>
 {{-- row --}}
+
 @endsection

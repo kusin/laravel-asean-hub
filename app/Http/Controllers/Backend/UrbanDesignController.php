@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use App\Models\UrbanDesign;
 use App\Models\Participants;
+use Faker\Provider\Lorem;
 use Illuminate\Http\Request;
 
 class UrbanDesignController extends Controller
@@ -18,11 +19,10 @@ class UrbanDesignController extends Controller
 
     public function show()
     {
-        return view('backend.admin.urban_design.create');
-    }
-
-    public function create()
-    {
-        return view('backend.admin.urban_design.create');
+        $data = "
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quod ex tempore, inventore fugiat nostrum at distinctio expedita. Ut, facilis. Porro magni harum fugiat debitis quibusdam deserunt voluptas possimus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quod ex tempore, inventore fugiat nostrum at distinctio expedita. Ut, facilis. Porro magni harum fugiat debitis quibusdam deserunt voluptas possimus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quod ex tempore, inventore fugiat nostrum at distinctio expedita. Ut, facilis. Porro magni harum fugiat debitis quibusdam deserunt voluptas possimus laboriosam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quod ex tempore, inventore fugiat nostrum at distinctio expedita. Ut, facilis. Porro magni harum fugiat debitis quibusdam deserunt voluptas possimus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quod ex tempore, inventore fugiat nostrum at distinctio expedita. Ut, facilis. Porro magni harum fugiat debitis quibusdam deserunt voluptas possimus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quod ex tempore, inventore fugiat nostrum at distinctio expedita. Ut, facilis. Porro magni harum fugiat debitis quibusdam deserunt voluptas possimus laboriosam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quod ex tempore, inventore fugiat nostrum at distinctio expedita. Ut, facilis. Porro magni harum fugiat debitis quibusdam deserunt voluptas possimus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quod ex tempore, inventore fugiat nostrum at distinctio expedita. Ut, facilis. Porro magni harum fugiat debitis quibusdam deserunt voluptas possimus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quod ex tempore, inventore fugiat nostrum at distinctio expedita. Ut, facilis. Porro magni harum fugiat debitis quibusdam deserunt voluptas possimus laboriosam.";
+        return view('backend.admin.urban_design.show', compact('data'));
     }
 }
