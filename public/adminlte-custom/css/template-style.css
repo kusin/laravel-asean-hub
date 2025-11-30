@@ -14,13 +14,14 @@ label.required::before {
     color: red;
 }
 
-/* .badge-custom {
-    font-size: 15px;
-    font-weight: normal;
-} */
-
 .badge-custom {
-    font-size: 95%;
+    /* font-size: 90%;
     font-weight: normal;
-    padding: 0.4em 0.6em;
+    padding: 10px 5px; */
+    
+    display: inline-block;
+    font-weight: normal;
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
 }

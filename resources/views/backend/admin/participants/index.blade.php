@@ -33,8 +33,9 @@
                                 <th>Action</th>
                                 <th>Name of Team</th>
                                 <th>Email of Team</th>
-                                <th>Origin of Country</th>
+                                <th>Country</th>
                                 <th>Registration</th>
+                                <th>Urban Design</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -51,6 +52,7 @@
                                 <td>{{ $item->team_name ?? '-' }}</td>
                                 <td>{{ $item->participants_email ?? '-' }}</td>
                                 <td>Indonesia</td>
+                                <td><span class="badge badge-success badge-custom">Completed</span></td>
                                 <td><span class="badge badge-success badge-custom">Completed</span></td>
                             </tr>
                             @endforeach

@@ -91,13 +91,13 @@
                         <div class="col-sm-6">
                             <div class="form-group mb-4">
                                 <label for="judges_email" class="required">Email</label>
-                                <input type="email" class="form-control border-dark" name="judges_email" id="judges_email" placeholder="ex. aseanhub-competition@gmail.com">
+                                <input type="email" class="form-control border-dark" name="judges_email" id="judges_email">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group mb-4">
                                 <label for="judges_password" class="required">Password</label>
-                                <input type="password" class="form-control border-dark" name="judges_password" id="judges_password" placeholder="minimum 8 characters">
+                                <input type="password" class="form-control border-dark" name="judges_password" id="judges_password">
                             </div>
                         </div>
                     </div>
