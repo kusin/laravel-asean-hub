@@ -21,45 +21,58 @@
     <div class="col-sm-12">
         <div class="card card-info card-outline">
             <div class="card-body">
+
                 <div class="text-center">
-                    <img class="img-fluid img-thumbnail img-circle mb-2"
-                        src="{{ asset('adminlte/dist/img/user8-128x128.jpg') }}"
-                        alt="User profile picture">
-                    <span class="d-block text-normal mb-2">PT. Karya Anak Bangsa</span>
+                    <h4 class="d-block text-normal mb-2">PT. Karya Anak Bangsa</h4>
                     <span class="d-block text-muted mb-4">aryajaya.alamsyah@aseanhub.jakarta.go.id</span>
                 </div>
-                <table class="table border-bottom mb-4">
-                    <tbody>
-                        <tr>
-                            <td class="text-left">Status Registration</td>
-                            <td class="text-right">
-                                <span class="badge badge-success badge-custom">Completed</span>
-                            </td>
-                            <td class="text-left">Assessment One</td>
-                            <td class="text-right">
-                                <span class="badge badge-success badge-custom">Approved</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Upload Design</td>
-                            <td class="text-right">
-                                <span class="badge badge-success badge-custom">Completed</span>
-                            </td>
-                            <td class="text-left">Assessment Two</td>
-                            <td class="text-right">
-                                <span class="badge badge-success badge-custom">Approved</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Last Updated</td>
-                            <td class="text-right">2026-01-01 - 19:00</td>
-                            <td class="text-left">Final Assessment</td>
-                            <td class="text-right">
-                                <span class="badge badge-danger badge-custom">Rejected</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <table class="table border-bottom mb-4">
+                            <tr>
+                                <td class="text-left">Status Registration</td>
+                                <td class="text-right">
+                                    <span class="badge badge-success badge-custom">Completed</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Upload Design</td>
+                                <td class="text-right">
+                                    <span class="badge badge-success badge-custom">Completed</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Last Updated</td>
+                                <td class="text-right">2026-01-01 / 19:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-6">
+                        <table class="table border-bottom mb-4">
+                            <tr>
+                                <td class="text-left">Assessment One</td>
+                                <td class="text-right">
+                                    <span class="badge badge-success badge-custom">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Assessment Two</td>
+                                <td class="text-right">
+                                    <span class="badge badge-success badge-custom">Approved</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Final Assessment</td>
+                                <td class="text-right">
+                                    <span class="badge badge-danger badge-custom">Rejected</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    {{-- col --}}
+                </div>
+                {{-- row --}}
 
                 <div class="row">
                     <div class="col-sm-6">
@@ -108,6 +121,7 @@
                     {{-- col-sm --}}
                 </div>
                 {{-- row --}}
+
             </div>
             {{-- card-body --}}
         </div>

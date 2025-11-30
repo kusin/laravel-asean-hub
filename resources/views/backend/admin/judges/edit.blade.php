@@ -28,7 +28,7 @@
                         <div class="col-sm-12">
                             <div class="form-group mb-4">
                                 <label for="judges_name" class="required">Name of Judges</label>
-                                <input type="text" class="form-control border-dark" name="judges_name" id="judges_name" placeholder="ex. Aryajaya Alamsyah, S.Kom., M.Kom.">
+                                <input type="text" class="form-control border-dark" name="judges_name" id="judges_name">
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -46,17 +46,17 @@
                         <div class="col-sm-6">
                             <div class="form-group mb-4">
                                 <label for="origin_institution" class="required">Origin of Institution</label>
-                                <input type="text" class="form-control border-dark" name="origin_institution" id="origin_institution" placeholder="ex. Politeknik Negeri Jakarta">
+                                <input type="text" class="form-control border-dark" name="origin_institution" id="origin_institution">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group mb-4">
-                                <label for="jugdes_task" class="required">Assessment Stage</label>
+                                <label for="jugdes_task" class="required">Task of Judges</label>
                                 <select class="custom-select form-control border-dark" name="jugdes_task" id="jugdes_task">
                                     <option value="" selected disabled></option>
-                                    <option value="First-Stage">First-Stage</option>
-                                    <option value="Second-Stage">Second-Stage</option>
-                                    <option value="Third-Stage">Third-Stage</option>
+                                    <option value="Assessment One">Assessment One</option>
+                                    <option value="Assessment Two">Assessment Two</option>
+                                    <option value="Final Assessment">Final Assessment</option>
                                 </select>
                             </div>
                         </div>
@@ -75,13 +75,13 @@
                         <div class="col-sm-6">
                             <div class="form-group mb-4">
                                 <label for="judges_email" class="required">Email</label>
-                                <input type="email" class="form-control border-dark" name="judges_email" id="judges_email" placeholder="ex. aseanhub-competition@gmail.com">
+                                <input type="email" class="form-control border-dark" name="judges_email" id="judges_email">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group mb-4">
                                 <label for="judges_password" class="required">Password</label>
-                                <input type="password" class="form-control border-dark" name="judges_password" id="judges_password" placeholder="minimum 8 characters">
+                                <input type="password" class="form-control border-dark" name="judges_password" id="judges_password">
                             </div>
                         </div>
                         {{-- col-sm --}}
